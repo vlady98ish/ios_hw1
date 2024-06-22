@@ -2,13 +2,11 @@
 //  ScoreView.swift
 //  PlayingCardApp
 //
-//   Created by Kristina & Adi
-//
 
 import SwiftUI
 
 struct ScoreView: View {
-    @Binding var dispalyingCurApp: PlayingCardAppApp.CurrentScreen
+    @Binding var displayingCurApp: PlayingCardApp.CurrentScreen
     @Binding var playerScore: Int
     @Binding var pcScore: Int
     
@@ -43,10 +41,12 @@ struct ScoreView: View {
                     
                     Spacer()
                     Button{
-                        dispalyingCurApp = .InitializationScreen
+                        displayingCurApp = .InitializationScreen
                     }
                     label: {
-                        Image("restart")
+                        Image("restart").resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
                     }
                     
                     Spacer()
@@ -60,6 +60,6 @@ struct ScoreView: View {
 
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreView(dispalyingCurApp: .constant(.Score), playerScore: .constant(0), pcScore: .constant(0))
+        ScoreView(displayingCurApp: .constant(.Score), playerScore: .constant(0), pcScore: .constant(0))
     }
 }

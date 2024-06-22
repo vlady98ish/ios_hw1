@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		632992E32A3B17AA0095FC21 /* PlayingCardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632992E22A3B17AA0095FC21 /* PlayingCardAppApp.swift */; };
+		632992E32A3B17AA0095FC21 /* PlayingCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632992E22A3B17AA0095FC21 /* PlayingCardApp.swift */; };
 		632992E72A3B17AE0095FC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632992E62A3B17AE0095FC21 /* Assets.xcassets */; };
 		632992EA2A3B17AE0095FC21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632992E92A3B17AE0095FC21 /* Preview Assets.xcassets */; };
 		632992F22A3B254D0095FC21 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632992F12A3B254D0095FC21 /* ScoreView.swift */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		632992DF2A3B17AA0095FC21 /* PlayingCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		632992E22A3B17AA0095FC21 /* PlayingCardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardAppApp.swift; sourceTree = "<group>"; };
+		632992E22A3B17AA0095FC21 /* PlayingCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardApp.swift; sourceTree = "<group>"; };
 		632992E62A3B17AE0095FC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632992E92A3B17AE0095FC21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		632992F12A3B254D0095FC21 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		632992E12A3B17AA0095FC21 /* PlayingCardApp */ = {
 			isa = PBXGroup;
 			children = (
-				632992E22A3B17AA0095FC21 /* PlayingCardAppApp.swift */,
+				632992E22A3B17AA0095FC21 /* PlayingCardApp.swift */,
 				AD6D5D672A406667003A170F /* LocationManager.swift */,
 				632992F02A3B251E0095FC21 /* Views */,
 				632992E62A3B17AE0095FC21 /* Assets.xcassets */,
@@ -154,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632992E32A3B17AA0095FC21 /* PlayingCardAppApp.swift in Sources */,
+				632992E32A3B17AA0095FC21 /* PlayingCardApp.swift in Sources */,
 				632992F22A3B254D0095FC21 /* ScoreView.swift in Sources */,
 				AD6D5D682A406667003A170F /* LocationManager.swift in Sources */,
 				632992F62A3B433E0095FC21 /* InitializationView.swift in Sources */,

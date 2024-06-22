@@ -2,7 +2,6 @@
 //  LocationManager.swift
 //  PlayingCardApp
 //
-//  Created by Kristina & Adi
 //
 
 import Foundation

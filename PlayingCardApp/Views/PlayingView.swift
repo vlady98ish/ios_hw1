@@ -1,8 +1,6 @@
 //
 //
 //  PlayingCardApp
-
-//   Created by Kristina & Adi
 //
 
 import SwiftUI
@@ -13,7 +11,7 @@ extension Color {
 }
 
 struct PlayingView: View {
-    @Binding var dispalyingCurApp: PlayingCardAppApp.CurrentScreen
+    @Binding var displayingCurApp: PlayingCardApp.CurrentScreen
     @Binding var playerScore: Int
     @Binding var pcScore: Int 
 
@@ -70,11 +68,15 @@ struct PlayingView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Image(playerCard)
+                        Image(playerCard).resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
                         
                         Spacer()
                         VStack{
-                            Image("timer")
+                            Image("timer").resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
                             Text("\(countDownTimer)").font(.largeTitle)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.lightColor).padding(.leading,20)
@@ -92,13 +94,15 @@ struct PlayingView: View {
                                         }
                                     } else {
                                         timerRunning = false
-                                        dispalyingCurApp = .Score
+                                        displayingCurApp = .Score
                                     }
                                 }
                         }
                         
                         Spacer()
-                        Image(pcCard)
+                        Image(pcCard).resizable()
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
                         Spacer()
                     }
                     
@@ -133,6 +137,6 @@ struct PlayingView: View {
 
 struct PlayingView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayingView(dispalyingCurApp: .constant(.Playing), playerScore: .constant(0), pcScore: .constant(0))
+        PlayingView(displayingCurApp: .constant(.Playing), playerScore: .constant(0), pcScore: .constant(0))
     }
 }

@@ -1,14 +1,7 @@
-//
-//  PlayingCardAppApp.swift
-//  PlayingCardApp
-//
-//   Created by Kristina & Adi
-//
-
 import SwiftUI
 
 @main
-struct PlayingCardAppApp: App {
+struct PlayingCardApp: App {
     @State var currentScreen = CurrentScreen.InitializationScreen
     @State var playerScore = 0
     @State var pcScore = 0
@@ -23,16 +16,16 @@ struct PlayingCardAppApp: App {
             
             switch currentScreen {
             case .InitializationScreen:
-                InitializationView(dispalyingCurApp: $currentScreen)
+                InitializationView(displayingCurApp: $currentScreen)
             case .Playing:
-                PlayingView(dispalyingCurApp: $currentScreen, playerScore: $playerScore, pcScore: $pcScore)
+                PlayingView(displayingCurApp: $currentScreen, playerScore: $playerScore, pcScore: $pcScore)
                     .onAppear {
                     // Reset scores to zero when entering PlayingView
                     playerScore = 0
                     pcScore = 0
                 }
             case .Score:
-                ScoreView(dispalyingCurApp: $currentScreen, playerScore: $playerScore, pcScore: $pcScore)
+                ScoreView(displayingCurApp: $currentScreen, playerScore: $playerScore, pcScore: $pcScore)
                 
             }
             
